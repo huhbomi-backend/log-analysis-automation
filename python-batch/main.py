@@ -1,5 +1,7 @@
-from config import LOG_FILE_PATH
+from config import LOG_FILE_PATH, REPORT_JSON_PATH
+
 from ingestion.log_reader import read_logs
+
 from preprocess.log_parser import parse_log_line
 from preprocess.log_cleaner import clean_logs
 
@@ -7,6 +9,7 @@ from analysis.error_analysis import analyze_errors
 from analysis.traffic_analysis import analyze_traffic
 from analysis.service_analysis import analyze_service
 
+from report.json_writer import save_report_json
 
 def main():
     raw_logs = read_logs(LOG_FILE_PATH)
@@ -26,6 +29,13 @@ def main():
     error_stats = analyze_errors(cleaned_logs)
     traffic_stats = analyze_traffic(cleaned_logs)
     service_stats = analyze_service(cleaned_logs)
+
+    save_report_json(
+        error_stats=error_stats,
+        traffic_stats=traffic_stats,
+        service_stats=service_stats,
+        output_path=REPORT_JSON_PATH,
+    )
 
     print("\n=== 에러 분석 ===")
     print(error_stats)

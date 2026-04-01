@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "totalRequests": 10,
+    "errorCount": 4,
+    "errorRate": 40.0
+  },
+  "trafficByHour": [
+    {
+      "hour": 9,
+      "count": 3
+    },
+    {
+      "hour": 10,
+      "count": 2
+    },
+    {
+      "hour": 11,
+      "count": 2
+    },
+    {
+      "hour": 12,
+      "count": 1
+    },
+    {
+      "hour": 13,
+      "count": 1
+    },
+    {
+      "hour": 14,
+      "count": 1
+    }
+  ],
+  "serviceRequestCounts": [
+    {
+      "service": "user-service",
+      "count": 4
+    },
+    {
+      "service": "order-service",
+      "count": 3
+    },
+    {
+      "service": "payment-service",
+      "count": 3
+    }
+  ]
+}
