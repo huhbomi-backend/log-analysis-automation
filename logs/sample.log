@@ -1,0 +1,10 @@
+2026-04-01 09:15:23 | user-service | INFO | GET /api/users | 200 | 120ms
+2026-04-01 09:16:10 | order-service | INFO | POST /api/orders | 201 | 250ms
+2026-04-01 09:17:45 | payment-service | ERROR | POST /api/payments | 500 | 980ms
+2026-04-01 10:01:12 | user-service | WARN | GET /api/users/15 | 404 | 45ms
+2026-04-01 10:05:33 | order-service | INFO | GET /api/orders | 200 | 132ms
+2026-04-01 11:20:05 | payment-service | ERROR | POST /api/payments/confirm | 502 | 1100ms
+2026-04-01 11:45:55 | user-service | INFO | PATCH /api/users/15 | 200 | 210ms
+2026-04-01 12:30:14 | order-service | INFO | DELETE /api/orders/3 | 204 | 98ms
+2026-04-01 13:02:41 | payment-service | INFO | GET /api/payments/history | 200 | 300ms
+2026-04-01 14:11:09 | user-service | ERROR | GET /api/users/profile | 500 | 870ms
