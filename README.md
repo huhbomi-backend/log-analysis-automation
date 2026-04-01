@@ -47,12 +47,11 @@
 [Analysis]
    ↓
 [Excel Report]
-
+```
 ---
 
-
 ## 패키지 구조
-
+```
 log_report_project/
 │
 ├── main.py                # 전체 실행 흐름 제어 (Entry Point)
@@ -83,3 +82,4 @@ log_report_project/
 │
 └── output/                # 결과 리포트
     └── report.xlsx
+```
